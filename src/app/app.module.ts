@@ -8,7 +8,7 @@ import { MonPremierComponent } from './mon-premier/mon-premier.component';
 @NgModule({
   declarations: [
     AppComponent,
-    MonPremierComponent
+    MonPremierComponent,
   ],
   imports: [
     BrowserModule,
