@@ -1,6 +1,8 @@
 # MyViewOne
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.   
+
+This project was made from training video from [Grafi](https://www.youtube.com/watch?v=oyqi2c2tHvI&list=PLxhnp_qsD8EOjadg0gWeorq8n3fYJuhrA&index=10)
 
 ## Development server
 
