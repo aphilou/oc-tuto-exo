@@ -15,4 +15,6 @@
     <button class="btn btn-danger"
             [disabled]="!isAuth"
             (click)="onEteindre()">Tout éteindre</button>
+    <button class="btn btn-secondary" (click)="onSave()">Enregistrer en BDD</button>
+    <button class="btn btn-primary" (click)="onFetch()">Charger depuis la BDD</button>
 </div>
