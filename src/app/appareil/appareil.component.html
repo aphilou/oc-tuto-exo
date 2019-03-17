@@ -3,7 +3,6 @@
         'list-group-item-success': appStatus==='allumé',
         'list-group-item-danger': appStatus==='éteint'}">
   <h4 [ngStyle]="{'color': getColor()}">Appareil : {{ appName }} -- Statut : {{ getStatus() }}</h4>
-  <input type="text" class="form-control" [(ngModel)]="appName">
   <a [routerLink]="[ id ]">Détails</a>
   <button class="btn btn-success"
           [disabled]="appStatus === 'allumé'"
