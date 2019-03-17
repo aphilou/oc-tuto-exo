@@ -2,23 +2,36 @@ export class AppareilService {
 
     appareils = [ 
         {
-          name: 'Machine à laver',
-          status: 'éteint'
+            id: 1,
+            name: 'Machine à laver',
+            status: 'éteint'
         },
         {
-          name: 'Four',
-          status: 'allumé'
+            id: 2,
+            name: 'Four',
+            status: 'allumé'
         },
         {
+            id: 3,
             name: 'Congélateur',
             status: 'allumé'
         },
         {
-          name: 'Frigidaire',
-          status: 'allumé'
+            id: 4,
+            name: 'Frigidaire',
+            status: 'allumé'
         }
       ];
     
+
+    getAppareilById(id: number) {
+        for (const app of this.appareils) {
+            if (app.id === id) {
+                return app;
+            }
+        }
+    }
+
     switchOnAll() {
         for (const app of this.appareils) {
             app.status = 'allumé';

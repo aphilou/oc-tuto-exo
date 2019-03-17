@@ -1,3 +1,18 @@
-<p>
-  appareil-view works!
-</p>
+<div class="col-xs-18">
+    <h2>Mes appareils</h2>
+    <p>Mise à jour: {{ lastUpdate | async | date: 'short' }}</p>
+    <ul class="list-group">
+      <app-appareil 
+          *ngFor="let app of appareils; let i = index"
+          [indexOfAppareil]="i"
+          [appName]="app.name" 
+          [appStatus]="app.status"
+          [id]="app.id"></app-appareil>
+    </ul>
+    <button class="btn btn-success" 
+            [disabled]="!isAuth"
+            (click)="onAllumer()">Tout allumer</button>
+    <button class="btn btn-danger"
+            [disabled]="!isAuth"
+            (click)="onEteindre()">Tout éteindre</button>
+</div>

@@ -11,6 +11,7 @@ export class AppareilComponent implements OnInit {
   @Input() appName : string;
   @Input() appStatus : string;
   @Input() indexOfAppareil: number;
+  @Input() id: number;
 
   constructor(private appService: AppareilService) { }
 
